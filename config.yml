@@ -1,0 +1,71 @@
+###########################################################################################
+#                                   Example Config.yml                                    #
+###########################################################################################
+#Config for MobHunt!
+Mob_Kill_Message: '&aYou killed&e {mob} &aand earned&e {money} &adollars!'  #Message for if on chat mode.
+Prefix: '&7[&4MobHunt&7]'
+
+Messages:
+    Mode: 'Title' #Modes can be: Chat or Title (Title by default)
+Title:
+    Message: '&aYou killed&e {mob}&a! &2&l+ ${money}' #Title message
+#The amount of money you get for each mob:
+zombie: 15
+skeleton: 20
+creeper: 25
+enderman: 30
+spider: 10
+slime: 20
+ghast: 30
+pig_zombie: 40
+cave_spider: 20
+silverfish: 5
+blaze: 25
+magma_cube: 10
+bat: 0
+witch: 40
+endermite: 0
+guardian: 40
+pig: 0
+sheep: 0
+cow: 0
+chicken: 0
+squid: 10
+wolf: 0
+mushroom_cow: 10
+ocelot: 0
+horse: 0
+rabbit: 0
+villager: 0
+wither: 150
+ender_dragon: 200
+giant: 100
+player: 20
+snowman: 10
+iron_golem: 40
+shulker: 30
+
+#Rewards:
+Rewards:
+    1:
+      Kills: 50 #Amount of kills needed
+      Money: 100 # Money rewarded
+      Message: '&aYou have killed &650&a mobs and earned $100! Good Job!'
+    2:
+      Kills: 100
+      Money: 150
+      Message: '&aYou have killed &6100&a mobs and earned $150! Good Job!'
+    3:
+      Kills: 250
+      Money: 200
+      Message: '&aYou have killed &6250&a mobs and earned $200! Good Job!'
+    4:
+      Kills: 400
+      Money: 900
+      Message: '&aYou have killed &6400&a mobs and earned $900! Amazing Job!'
+    Reward_Format: '&7Get &a{kills} &7kills for &a{money} &7dollars!'
+#Anouncements:
+Announcements:
+    enderdragon: '&e{player} &ahas killed the &eEnderdragon!'  # You can do any mob in the announcements. Just put the name ***As listed in the config file***
+    wither: '&e{player} &ahas killed the &eWither!'
+    zombie: '&e{player} &ahas killed a &eZombie!'
