@@ -6,6 +6,6 @@ Todo List:
 
 - Add option to only give money at night
 
-- Make it where if the money is set at 0 to not display the action bar or chat message.
+- Make it where if the money is set at 0 to not display the action bar or chat message. - Done -
 
-- Add an option to disable it in different worlds!
+- Add an option to disable it in different worlds! -Errors-
