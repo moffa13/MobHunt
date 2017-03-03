@@ -1,0 +1,10 @@
+name: MobHunt
+version: 1.5.2
+main: me.ryandw11.mobhunt.core.Main
+author: ryandw11
+description: Get rewards for killing mobs!
+depend: [Vault]
+commands:
+    mobhunt:
+     description: Main Command for MobHunt!
+     aliases: [mh, mb, mobh, mob]

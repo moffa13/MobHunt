@@ -1,55 +1,223 @@
-###########################################################################################
-#                                   Example Config.yml                                    #
-###########################################################################################
 #Config for MobHunt!
-Mob_Kill_Message: '&aYou killed&e {mob} &aand earned&e {money} &adollars!'  #Message for if on chat mode.
-Prefix: '&7[&4MobHunt&7]'
+Mob_Kill_Message: '&aYou killed&e {mob} &aand earned&e {money} &adollars!'
+Prefix: '&6&lMobHunt &b&l|'
+NoPermission: '&cYou do not have permission for this command!'
+LeaderBoard_Format: '&7[&e{rank}&7] &e{player} &awith &e{kills} mob kills!'
 
 Messages:
-    Mode: 'Title' #Modes can be: Chat or Title (Title by default)
+    Mode: 'Title'
 Title:
-    Message: '&aYou killed&e {mob}&a! &2&l+ ${money}' #Title message
-#The amount of money you get for each mob:
-zombie: 15
-skeleton: 20
-creeper: 25
-enderman: 30
-spider: 10
-slime: 20
-ghast: 30
-pig_zombie: 40
-cave_spider: 20
-silverfish: 5
-blaze: 25
-magma_cube: 10
-bat: 0
-witch: 40
-endermite: 0
-guardian: 40
-pig: 0
-sheep: 0
-cow: 0
-chicken: 0
-squid: 10
-wolf: 0
-mushroom_cow: 10
-ocelot: 0
-horse: 0
-rabbit: 0
-villager: 0
-wither: 150
-ender_dragon: 200
-giant: 100
-player: 20
-snowman: 10
-iron_golem: 40
-shulker: 30
+    Message: '&aYou killed&e {mob}&a! &2&l+ ${money}'
 
+Particle:
+    Effect_Number: 500
+
+GameMode_Limit:
+    Enabled: true
+    
+#Players don't recive money if the mob was spawned by an egg or spawner
+Limit_Money_Mob_Spawn: false
+
+#You may want to remove world.
+Worlds_Not_Allowed:
+    - Put_Worlds_That_Are_Not_Allowed_Here
+    - Put_Worlds_That_Are_Not_Allowed_Here_Nether
+    - Put_Worlds_That_Are_Not_Allowed_Here_End
+
+#The amount of money you get for each mob:
+zombie:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 15
+zombie_horse:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+skeleton:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+creeper:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 25
+enderman:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 30
+spider:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 10
+slime:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+ghast:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 30
+pig_zombie:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+cave_spider:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+silverfish:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 5
+blaze:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 25
+magma_cube:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 10
+bat:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+witch:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 30
+endermite:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+guardian:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 25
+pig:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+sheep:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+cow:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+chicken:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+squid:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 10
+wolf:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+mushroom_cow:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 10
+ocelot:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+rabbit:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+villager:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+wither:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 150
+ender_dragon:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 200
+giant:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 100
+snowman:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 10
+iron_golem:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 40
+shulker:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 30
+wither_skeleton:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 30
+husk:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 10
+stray:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 10
+polar_bear:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 10
+llama:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 3
+zombie_village:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+elder_guardian:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+evoker:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+vex:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+vindicator:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+mule:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+skeleton_horse:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+donky:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+horse:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
 #Rewards:
 Rewards:
     1:
-      Kills: 50 #Amount of kills needed
-      Money: 100 # Money rewarded
+      Kills: 50
+      Money: 100
       Message: '&aYou have killed &650&a mobs and earned $100! Good Job!'
     2:
       Kills: 100
@@ -64,8 +232,9 @@ Rewards:
       Money: 900
       Message: '&aYou have killed &6400&a mobs and earned $900! Amazing Job!'
     Reward_Format: '&7Get &a{kills} &7kills for &a{money} &7dollars!'
+    #Number of rewards
+    Number: 4
 #Anouncements:
 Announcements:
-    enderdragon: '&e{player} &ahas killed the &eEnderdragon!'  # You can do any mob in the announcements. Just put the name ***As listed in the config file***
+    enderdragon: '&e{player} &ahas killed the &eEnderdragon!'
     wither: '&e{player} &ahas killed the &eWither!'
-    zombie: '&e{player} &ahas killed a &eZombie!'
