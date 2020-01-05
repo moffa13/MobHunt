@@ -1,20 +1,20 @@
 package me.ryandw11.mobhunt.API;
 
-import org.bukkit.Effect;
-import org.bukkit.Sound;
 import org.bukkit.entity.EntityType;
 
-import me.ryandw11.mobhunt.core.Main;
-import me.ryandw11.mobhunt.core.Mobs;
+import me.ryandw11.mobhunt.MobHunt;
+import me.ryandw11.mobhunt.util.Mobs;
 /**
  * All methods having to do with mobs.
+ * API Note: MobEffect has been removed due to the 1.13 update.
+ * API Note: MobSound has been removed due to the 1.13 update.
  * @author Ryandw11
  *
  */
 public class MobData {
-	private Main plugin;
+	private MobHunt plugin;
 	public MobData(){
-		this.plugin = Main.plugin;
+		this.plugin = MobHunt.plugin;
 	}
 	/**
 	 * Grabs the amount of money the player gets for killing a mob.
@@ -43,29 +43,6 @@ public class MobData {
 		else{
 			return -1;
 		}
-	}
-	
-	/**
-	 * Grab the mob particle effect
-	 * @param e The mob you want.
-	 * @return Effect that was given.
-	 * @throws NullPointerException
-	 */
-	public Effect getMobPartical(EntityType e){
-		MobEffect me = new MobEffect();
-		String monstertype = e.toString().toLowerCase();
-		return me.effectOut(plugin.getConfig().getString(monstertype + ".Particle"));
-	}
-	/**
-	 * Grab the mobs sound
-	 * @param e The mob you want.
-	 * @return Sound that was given
-	 * @throws NullPointerException
-	 */
-	public Sound getMobSound(EntityType e){
-		MobSound ms = new MobSound();
-		String monstertype = e.toString().toLowerCase();
-		return ms.soundEffect(plugin.getConfig().getString(monstertype + ".Sound"));
 	}
 	
 }

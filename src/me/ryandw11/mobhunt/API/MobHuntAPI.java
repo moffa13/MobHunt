@@ -3,7 +3,7 @@ package me.ryandw11.mobhunt.API;
 
 import org.bukkit.entity.Player;
 
-import me.ryandw11.mobhunt.core.Main;
+import me.ryandw11.mobhunt.MobHunt;
 /**
  * 
  * @author Ryandw11
@@ -11,16 +11,16 @@ import me.ryandw11.mobhunt.core.Main;
  *
  */
 public class MobHuntAPI {
-	private Main plugin;
-	public MobHuntAPI(Main plugin){
+	private MobHunt plugin;
+	public MobHuntAPI(MobHunt plugin){
 		this.plugin = plugin;
 	}
 	/**
 	 * Grab the main plugin.
 	 * @return plugin
 	 */
-	public static Main getPlugin(){
-		return Main.plugin;
+	public static MobHunt getPlugin(){
+		return MobHunt.plugin;
 	}
 	/**
 	 * Get the mob hunt verson 

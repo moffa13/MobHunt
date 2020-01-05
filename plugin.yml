@@ -1,9 +1,10 @@
 name: MobHunt
-version: 1.5.2
-main: me.ryandw11.mobhunt.core.Main
+version: 1.5.5
+main: me.ryandw11.mobhunt.MobHunt
 author: ryandw11
 description: Get rewards for killing mobs!
 depend: [Vault]
+api-version: 1.13
 commands:
     mobhunt:
      description: Main Command for MobHunt!

@@ -213,6 +213,74 @@ horse:
     Sound: 'none'
     Particle: 'none'
     Money: 0
+parrot:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+illusioner:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+dolphins:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+drowned:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 15
+cod:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+salmon:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+pufferfish:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+tropical_fish:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+phantoms:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 20
+turtles:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+pillager:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 30
+panda:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+fox:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+ravager:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 35
+trader_llama:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+wandering_trader:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
+bee:
+    Sound: 'none'
+    Particle: 'none'
+    Money: 0
 #Rewards:
 Rewards:
     1:

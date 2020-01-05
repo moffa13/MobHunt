@@ -1,15 +1,15 @@
 package me.ryandw11.mobhunt.API;
 
-import me.ryandw11.mobhunt.core.Main;
+import me.ryandw11.mobhunt.MobHunt;
 /**
  * MobRewards
  * @author Ryandw11s
  *
  */
 public class MobRewards {
-	private Main plugin;
+	private MobHunt plugin;
 	public MobRewards(){
-		this.plugin = Main.plugin;
+		this.plugin = MobHunt.plugin;
 	}
 	/**
 	 * Grab reward message.

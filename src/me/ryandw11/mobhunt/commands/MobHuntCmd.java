@@ -1,18 +1,18 @@
 package me.ryandw11.mobhunt.commands;
 
-import me.ryandw11.mobhunt.core.Main;
-import net.md_5.bungee.api.ChatColor;
-
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import me.ryandw11.mobhunt.MobHunt;
+
 public class MobHuntCmd implements CommandExecutor {
 	
-	private Main plugin;
-	public MobHuntCmd(Main plugin){
+	private MobHunt plugin;
+	public MobHuntCmd(MobHunt plugin){
 		this.plugin = plugin;
 	}
 	
@@ -21,8 +21,11 @@ public class MobHuntCmd implements CommandExecutor {
 	@SuppressWarnings("deprecation")
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
+		if(!(sender instanceof Player )) {
+			sender.sendMessage(ChatColor.RED + "This command is for players only!");
+			return true;
+		}
 		Player p = (Player) sender;
-		if(!(p instanceof Player )) return true;
 		
 		if(cmd.getName().equalsIgnoreCase("MobHunt")){
 			
@@ -55,6 +58,21 @@ public class MobHuntCmd implements CommandExecutor {
 			else if(args.length == 1 && args[0].equalsIgnoreCase("kills")){
 				if(p.hasPermission("mobhunt.kills")){
 					p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.Prefix + "&aYou have&e " + plugin.kill.getInt(p.getUniqueId() + "kills") + " &akills."));
+				}
+				else{
+					p.sendMessage(plugin.Prefix + plugin.NoPerm);
+				}
+			}else if(args.length == 1 && args[0].equalsIgnoreCase("debug")){
+				if(p.hasPermission("mobhunt.debug")){
+					if(!MobHunt.debug.contains(p)){
+						p.sendMessage(ChatColor.GRAY + "Debug mode enabled!");
+						MobHunt.debug.add(p);
+					}else if(MobHunt.debug.contains(p)){
+						p.sendMessage(ChatColor.GRAY + "Debug mode disabled!");
+						MobHunt.debug.remove(p);
+					}else{
+						p.sendMessage(ChatColor.RED + "A fatal error has happened! Error code: MHCMD_Ln_62-73 Array not found.");
+					}
 				}
 				else{
 					p.sendMessage(plugin.Prefix + plugin.NoPerm);

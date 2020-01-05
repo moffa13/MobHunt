@@ -1,8 +1,5 @@
 package me.ryandw11.mobhunt.listners;
 
-import me.ryandw11.mobhunt.core.Main;
-
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -11,9 +8,11 @@ import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason;
 import org.bukkit.metadata.FixedMetadataValue;
 
+import me.ryandw11.mobhunt.MobHunt;
+
 public class EnitityMetaData implements Listener{
-	private Main plugin;
-	public EnitityMetaData(Main plugin){
+	private MobHunt plugin;
+	public EnitityMetaData(MobHunt plugin){
 		this.plugin = plugin;
 	}
 	
